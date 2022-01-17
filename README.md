@@ -8,22 +8,28 @@ To document and share my configuration. A more detailed writeup of my macOS envi
 
 ### [Hammerspoon](https://www.hammerspoon.org)
 
-* Window management for yabai
+* Window management for [yabai]().
 * App launcher and other useful [keybinds.](~/keybinds.md)
- 
+
 ### Terminal and prompt
 
 * [Solarized is a default theme for iTerm2.](https://github.com/gnachman/iTerm2/commit/7edcec0ffbc85c1b913fd4d19dafd01a116ab300) 
 * [Oh-my-zsh](https://ohmyz.sh) with [oxide](https://github.com/dikiaap/dotfiles/blob/master/.oh-my-zsh/themes/oxide.zsh-theme) prompt modifed by me.
-      +  [aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases)
-      +  [fzf](https://github.com/unixorn/fzf-zsh-plugin) - 
-      +  [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
-      +  [tmux](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux)
-      +  [web-search](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search)
-      +  [Meaningful error codes](<https://github.com/cedi/meaningful-error-codes>)
-      +  [sublime](<https://github.com/valentinocossar/sublime>) - Opens file in existing Sublime window, if there is one open
-* [tmux solarized theme for tmux](tps://github.com/seebi/tmux-colors-solarized) modified by me. 
-      + [Online Status]()
+
+   +  [aliases](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/aliases)
+   +  [fzf](https://github.com/unixorn/fzf-zsh-plugin) - 
+   +  [git](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git)
+   +  [tmux](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tmux)
+   +  [web-search](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search)
+   +  [Meaningful error codes](<https://github.com/cedi/meaningful-error-codes>)
+   +  [sublime](<https://github.com/valentinocossar/sublime>) - Opens file in existing Sublime window, if there is one open
+   
+* [tmux solarized theme for tmux](tps://github.com/seebi/tmux-colors-solarized) modified by me.
+
+   + [Prefix highlight]
+   + [Online Status]()
+   + [Sidebar]()
+   + [Copycat]()
 
 ### CLI utilities
 
@@ -46,6 +52,14 @@ To document and share my configuration. A more detailed writeup of my macOS envi
 * [Prettier]()
 
 ### Sublime Text
+
+* [Solarized for Sublime Text]()
+* [A File Icon](https://github.com/SublimeText/AFileIcon)
+* [AppleScript Extensions](https://github.com/idleberg/sublime-applescript)
+* [JsPrettier](https://github.com/jonlabelle/SublimeJsPrettier)
+* [MarkdownEditing](https://github.com/SublimeText-Markdown/MarkdownEditing)
+* [MarkdownPreview](https://github.com/facelessuser/MarkdownPreview)
+* [WordCount](https://github.com/titoBouzout/WordCount)
 
 ### Ubersicht
    
