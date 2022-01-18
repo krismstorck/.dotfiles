@@ -1,11 +1,13 @@
 # Will need to create and apply logic to switch "themes" depending on system light/dark mode. For now, they are both in this file; the dark theme is commented out.
 
+
+
 # General status bar settings
 set -g status on
 set -g status-interval 5
 set -g status-position bottom
 set -g status-justify left
-set -g status-right-length 50
+set -g status-right-length 90
 
 # Default statusbar colors
 set-option -g status-style fg=#657b83,bg=white #base00 and base2
@@ -43,13 +45,12 @@ separator_powerline_right="\ue0B4"
 
 # Window segment settings
 wg_session="#[fg=white, bg=brightwhite]$separator_powerline_leftendcap#[default] #S"
-wg_user_host="#[default]#(whoami)#[default]@#H#[fg=white,bg=brightwhite]$separator_powerline_right"
+wg_user_host="#[default]$seperator_powerline_left#[default]#(whoami)#[fg=white,bg=brightwhite]$separator_powerline_right"
 
 setw -g window-status-format "#[default]$separator_powerline_right#[default] #I:#W #[fg=#93a1a1,bg=white]$separator_powerline_right"
 setw -g window-status-current-format "#[fg=white,nobold]$separator_powerline_right#[default] #I:#W #[fg=#839496,bg=white]$separator_powerline_right"
 
-
-
-
+set -g status-left "$wg_session" 
+set -g status-right "$wg_user_host"
 
 
