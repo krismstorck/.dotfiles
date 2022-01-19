@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 # Install the XCode developer tools
 xcode-select --install
@@ -94,13 +94,22 @@ mas install 1463298887 # Userscript for Safari
 mas install 1352778147 # Bitwarden, or else we can't use the Safari extension
 mas install 880001334 # Reeder 3
 
+# Install theme for iTerm
+open "${HOME}/.dotfiles/Solarized Dark.itermcolors"
+
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # Install npm
+nvm install node
 
 # Install oh-my-zsh settings, plugins
 
 # Install tmux plugin manager
 
-# Install 
+# Install NvChad
+
+# Install Sublime Text settings, plugins
+cp -r {$PATH}/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*/Packages/User/Preferences.sublime-settings 2> /dev/null
+
+
