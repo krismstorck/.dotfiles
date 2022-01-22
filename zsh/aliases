@@ -1,0 +1,95 @@
+#!/usr/bin/env zsh
+
+# Reload configs
+alias rlzsh="source ~/.zshrc"
+alias rltmux="source .tmux/tmux.config"
+
+# Renaming some essential functions
+alias l="COLUMNS=60 exa -bghHliS --all --grid --git --sort=ext --color=always --group-directories-first --icons --color-scale" # I know this is excessive but I need it
+
+alias vi="nvim"
+alias vim="nvim"
+alias python="python3"
+alias pip="pip3"
+
+# Better directory navigation
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias .2='cd ../../'
+alias .3='cd ../../../'
+alias .4='cd ../../../../'
+alias .5='cd ../../../../../'
+
+# Quicker utility access
+alias hole="ssh pi@10.1.10.6" # Pi-hole
+alias mm="ssh kris@10.1.10.5" # MagicMirror
+
+# Quick file access
+alias doths="nvim ~/.hammerspoon/init.lua" # Hammerspoon config
+alias dotnvim="nvim ~/.config/nvim/custom/chadrc.lua" # Nvchad config
+alias dotreadme="nvim ~/.dotfiles/README.md"
+alias dottmux="nvim .tmux/tmux.conf" # Tmux config
+alias dotyabai="nvim ~/.yabairc" # yabai config
+alias dotzsh="nvim ~/.zshrc" # zsh config
+alias ealias="nvim ~/.oh-my-zsh/custom/alias.zsh" # Personal zsh aliases
+alias edefaults="nvim ~/.dotfiles/scripts/defaults.sh" # System preferences
+alias keys="st ~/.dotfiles/keybinds.md" # Keybind reference
+
+# Quick folder access
+alias cdblog="cd ~/src/personal/blog && l"
+alias cdcloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/ && l"
+alias cdcurated="cd ~/src/curated && l"
+alias cddocs="cd ~/Documents && l"
+alias cddown="cd ~/Downloads && l"
+alias cddots="cd ~/.dotfiles && l"
+alias cdextend="cd ~/src/extensions l"
+alias cdhome="cd ~/src/personal/homebase && l"
+alias cdlearn="cd ~/src/learning && l"
+alias cdmacos="cd ~/src/macos && l"
+alias cdme="cd ~/src/personal/krismstorck && l"
+alias cdmymacos="cd ~/Documents/Personal/my-macOS && l"
+alias cdmyios="cd ~/Documents/"
+alias cdsrc="cd ~/src && l"
+alias cdpersonal="cd ~/src/personal && l"
+alias cdprod="cd ~/src/prod && l"
+alias cdresume="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Write/prof/resume && l"
+alias cdweb="cd ~/src/web && l"
+alias cdwrite="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Write && l"
+
+# Quick project access
+alias codeblog="code ~/src/personal/blog"
+alias codecurate="code ~/src/curated"
+alias codekris="code ~/src/personal/krismstorck"
+alias codemind="code ~/Library/Mobile\ Documents/com~apple~CloudDocs/Write/mind-palace"
+
+# Radio
+alias npr="ffplay http://204.93.207.172 -nodisp" # WAMU
+alias wtul="ffplay http://129.81.156.83:8000/ -nodisp" # WTUL
+
+# Focus/study
+alias ytlsynth="source ~/src/macos/bash/synthwave.sh"
+alias ytltokyo="source ~/src/macos/bash/lostinjapan.sh"
+alias ytlwolves="source ~/src/macos/bash/lofi4werewolves.sh"
+alias ytlxmas="source ~/src/macos/bash/lofixmas.sh"
+
+# Books I'm reading
+alias bookshelf="cd ~/Documents/Calibre\ Library && l"
+alias epyapics
+alias epymindful
+
+# Better Git
+alias ga='git add'
+alias gc="git commit -m"
+alias gpp="git pull"
+alias gps="git push"
+alias gs="git status"
+alias gl='git log --graph --oneline --decorate'
+
+# System
+alias beep='echo -en "\007"' # Sound check
+
+alias pbc="pbcopy"
+alias pbp="pbpaste"
+
