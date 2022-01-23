@@ -1,0 +1,16 @@
+{
+
+    "editor.fontFamily": "Victor Mono",
+    "editor.wordWrap": "on",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Solarized Light",
+    "editor.minimap.enabled": false,
+    "workbench.sideBar.location": "right",
+    "markdownExtended.disabledPlugins": "kbd",
+    "translation.fromLanguage": "zh-CN",
+    "translation.targetLanguage": "en",
+    "translation.api": "google"
+
+}

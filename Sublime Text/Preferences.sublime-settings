@@ -1,0 +1,21 @@
+{
+	"ignored_packages":
+	[
+		"Markdown",
+		"Vintage",
+	],
+	"theme": "Adaptive.sublime-theme",
+	"color_scheme": "auto",
+	"dark_theme": "Default Dark.sublime-theme",
+	"light_theme": "ayu-light.sublime-theme",
+	"dark_color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"light_color_scheme": "Packages/Solarized Color Scheme/Solarized (light).sublime-color-scheme",
+	"font_face": "Victor Mono",
+	"line_padding_bottom": -3,
+	"line_padding_top": -2,
+
+	"font_size": 12,
+	"draw_centered": true,
+    "word_wrap": true,
+    "wrap_width": 80,
+}
