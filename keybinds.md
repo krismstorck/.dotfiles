@@ -4,6 +4,8 @@ I am using Hammerspoon to manage my system wide keybinds.
 
 ## Global
 
+**Open application**
+
 | Leader		  		 | Combo | Action	      	   				  |
 |------------------------|-------|------------------------------------|
 | `F18` (Caps Lock) [^1] | `a`   | 									  |			
@@ -32,9 +34,9 @@ I am using Hammerspoon to manage my system wide keybinds.
 
 Using yabai for bsp. 
 
-| Leader		  | Combo | Action	        				    |
-|-----------------|-------|-------------------------------------|
-| Ctrl + Opt      | `m`   | Turn on window management mode      |
+| Leader	 | Combo | Action	        			  |
+|------------|-------|--------------------------------|
+| Ctrl + Opt | `m`   | Turn on window management mode |
 
 Windows management mode ('WMM') must be enabled first and can be exited by ESC
 Once in WMM the following recipes can be used:
@@ -56,24 +58,13 @@ Once in WMM the following recipes can be used:
 | Ctrl + Shift + Cmd | `h` 	 | Move west    |
 | Ctrl + Cmd 		 | `j` 	 | Resize south |
 | Ctrl + Cmd		 | `k` 	 | Resize north |
-| Ctrl + Cmd		 | `l` 	 | Resize east 			   |
-| Ctrl + Cmd		 | `h` 	 | Resize west |
+| Ctrl + Cmd		 | `l` 	 | Resize east 					 |
+| Ctrl + Cmd		 | `h` 	 | Resize west 					 |
 | Shift + Opt		 | `.` 	 | Move window to next space	 |
 | Shift + Opt		 | `,` 	 | Move window to previous space |
 | Shift + Opt 		 | `0` 	 | Balances windows 			 |
 | Shift + Opt		 | Space | Rotate windows 90° 			 |
 | Ctrl + Shift + Cmd | Space | Toggle float					 |
-
-
-**Copy text and send to...**
-
-| Leader		  |Combo| Action	        				  |
-|-----------------|-----|-------------------------------------|
-| Ctrl + Opt      | `m` | iTerm							      |
-|				  |	` ` | Sublime Text 						  |
-|				  |	` ` | VS Code						      |
-|				  |	` ` | Notes								  |
-|				  | ` ` | Reminders							  |
 
 
 **Go to URL...**
@@ -107,13 +98,23 @@ Once in WMM the following recipes can be used:
 
 **Quick file access**
 
+| Leader		  		|Combo| Action	        				  |
+|-----------------------|-----|-------------------------------------|
+| `F18` (Caps Lock) + t | `h` | Open Hammerspoon config in Neovim   |
+|				  |	`t` | Open tmux config in Neovim 		  |
+|				  |	`y` | Open yabai config in Neovim		  |
+|				  |	`z` | Open zsh config in Neovim			  |
+|				  | `k` | Open keybinds.md in Sublime Text    |
+
+**Copy text and send to...**
+
 | Leader		  |Combo| Action	        				  |
 |-----------------|-----|-------------------------------------|
-| Ctrl + Opt      | `m` | Open Hammerspoon config in Neovim   |
-|				  |	` ` | Open tmux config in Neovim 		  |
-|				  |	` ` | Open yabai config in Neovim		  |
-|				  |	` ` | Open zsh config in Neovim			  |
-|				  | ` ` | Open keybinds.md in Sublime Text    |
+| Ctrl + Opt      | `m` | iTerm							      |
+|				  |	` ` | Sublime Text 						  |
+|				  |	` ` | VS Code						      |
+|				  |	` ` | Notes								  |
+|				  | ` ` | Reminders							  |
 
 **Quality of life enhancement**
 
