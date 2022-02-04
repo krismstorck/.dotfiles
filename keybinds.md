@@ -6,27 +6,27 @@ I am using Hammerspoon to manage my system wide keybinds.
 
 **Open application**
 
-| Leader		  		 | Combo | Action	      	   				  |
-|------------------------|-------|------------------------------------|
-| `F18` (Caps Lock) [^1] | `a`   | 									  |			
-|						 | `b`   | Open Safari       				  | 
-|				  		 | `c`   | Open VS Code      				  |
-|						 | `d`   | Open Calendar     				  |
-|				 		 | `e`   | Open GIMP		   				  |
-|						 | `f`	 |									  |
-|						 | `g`	 |									  |
-|						 | `l`   | Open Podcasts     				  |
-|						 | `n`   | Open Notes	   				  	  |
-|						 | `m`   | Open Activty Monitor				  |
-|						 | `o`   | Reload Hammerspoon configuration   |
-|				  		 | `p`   | Open Photos       			      |
-|						 | `r`   | Open Reminders	   				  |
-|				  		 | `s`   | Open Sublime Text 				  |
-|				  		 | `t`   | Open iTerm        				  |
-|						 | `v`   | Open UTM		   				  	  |
-| 				  		 | `u`   | Open Finder 						  |
-|						 | `w`   | Open Bitwarden		   			  |
-|						 | `x`   | Open Network settings		   	  |
+| Leader		  		 | Combo | Action	      	   				|
+|------------------------|-------|----------------------------------|
+| `F18` (Caps Lock) [^1] | `a`   | 									|			
+|						 | `b`   | Open Safari       				| 
+|				  		 | `c`   | Open VS Code      				|
+|						 | `d`   | Open Calendar     				|
+|				 		 | `e`   | Open GIMP		   				|
+|						 | `f`	 |									|
+|						 | `g`	 |									|
+|						 | `l`   | Open Podcasts     				|
+|						 | `n`   | Open Notes	   				  	|
+|						 | `m`   | Open Activty Monitor				|
+|						 | `o`   | Reload Hammerspoon configuration |
+|				  		 | `p`   | Open Photos       			    |
+|						 | `r`   | Open Reminders	   				|
+|				  		 | `s`   | Open Sublime Text 				|
+|				  		 | `t`   | Open iTerm        				|
+|						 | `v`   | Open UTM		   				  	|
+| 				  		 | `u`   | Open Finder 						|
+|						 | `w`   | Open Bitwarden		   			|
+|						 | `x`   | Open Network settings		   	|
 
 [^1]: I have used `hidutil` to remap this 
 
@@ -43,21 +43,21 @@ Once in WMM the following recipes can be used:
 
 
 | Leader 			 | Combo | Action
-|--------------------|-------|-------------------------------------|
-| Opt    			 | `j` 	 | Focus south  		|
-| Opt  	 			 | `k` 	 | Focus north  |
-| Opt  	 			 | `l` 	 | Focus east   |
-| Opt  				 | `h` 	 | Focus west   |
-| Ctrl + Shift + Opt | `j` 	 | Swap south   |
-| Ctrl + Shift + Opt | `k` 	 | Swap north   |
-| Ctrl + Shift + Opt | `l` 	 | Swap east    |
-| Ctrl + Shift + Opt | `h` 	 | Swap west    |
-| Ctrl + Shift + Cmd | `j` 	 | Move south	  |
-| Ctrl + Shift + Cmd | `k` 	 | Move north	  |
-| Ctrl + Shift + Cmd | `l` 	 | Move east    |
-| Ctrl + Shift + Cmd | `h` 	 | Move west    |
-| Ctrl + Cmd 		 | `j` 	 | Resize south |
-| Ctrl + Cmd		 | `k` 	 | Resize north |
+|--------------------|-------|-------------------------------|
+| Opt    			 | `j` 	 | Focus south  				 |
+| Opt  	 			 | `k` 	 | Focus north  				 |
+| Opt  	 			 | `l` 	 | Focus east   				 |
+| Opt  				 | `h` 	 | Focus west   				 |
+| Ctrl + Shift + Opt | `j` 	 | Swap south   				 |
+| Ctrl + Shift + Opt | `k` 	 | Swap north   				 |
+| Ctrl + Shift + Opt | `l` 	 | Swap east    				 |
+| Ctrl + Shift + Opt | `h` 	 | Swap west    				 |
+| Ctrl + Shift + Cmd | `j` 	 | Move south	  				 |
+| Ctrl + Shift + Cmd | `k` 	 | Move north	  				 |
+| Ctrl + Shift + Cmd | `l` 	 | Move east    				 |
+| Ctrl + Shift + Cmd | `h` 	 | Move west    				 |
+| Ctrl + Cmd 		 | `j` 	 | Resize south 				 |
+| Ctrl + Cmd		 | `k` 	 | Resize north 				 |
 | Ctrl + Cmd		 | `l` 	 | Resize east 					 |
 | Ctrl + Cmd		 | `h` 	 | Resize west 					 |
 | Shift + Opt		 | `.` 	 | Move window to next space	 |
@@ -71,11 +71,11 @@ Once in WMM the following recipes can be used:
 
 | Leader				| Combo | Action 									 |
 |-----------------------|-------|--------------------------------------------|
-| `F18` (Caps Lock) + a | `b`   | https://pin.it/1BNKGEL					 | 	| 						| `d` 	| https://drive.google.com 			 |
-|						| `g` 	| https://www.github.com/krismstorck |
-|						| `k`   | https://www.krismstorck.com |
+| `F18` (Caps Lock) + a | `b`   | https://pin.it/1BNKGEL					 | 	| 						| `d` 	| https://drive.google.com 			 		 |
+|						| `g` 	| https://www.github.com/krismstorck 		 |
+|						| `k`   | https://www.krismstorck.com 				 |
 |						| `p`   | https://www.reddit.com/user/9minutes/m/lp/ |
-|						| `t` 	| https://www.trello.com 	 |
+|						| `t` 	| https://www.trello.com 	 				 |
 
 
 
@@ -84,16 +84,19 @@ Once in WMM the following recipes can be used:
 | Leader		  		| Combo | Action	           		 |
 |-----------------------|-------|----------------------------|
 | `F18` (Caps Lock) + f | `b` 	| ~/src/personal/blog 		 |
+|				  		| `d` 	| ~/Downloads 		   		 |
 | 				  		| `l`	| ~/src/learning 			 |
 |                 		| `k`	| ~/src/personal/krismstorck |
 | 				  		| `m`	| ~/Write/mind-palace		 |
-|				  |	` ` | ~/Downloads 		   |
-|				  |	` ` | ~/Documents 		   |
-|                 | ` ` | ~/src				   |
-|	              | ` ` | ~/Library			   |
+|				  		| `p`	| ~/Documents/Personal 		 |
+|	              		| `r` 	| ~/.dotfiles	   			 |
+|                		| `s` 	| ~/src				   		 |
+
+
+
 |				  | ` ` | iCloud			   |
 |				  | ` ` | iCloud/write		   |
-|				  |	` `	| ~/Documents/Personal |
+
 |				  |	` ` | ~/opt/homebrew	   |
 
 **Quick file access**
