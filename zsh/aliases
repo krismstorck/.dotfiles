@@ -82,9 +82,9 @@ alias like="spt pb --like"
 
 # Books I'm reading
 alias bookshelf="cd ~/Documents/Calibre\ Library && l"
-alias epyapics="cd ~/Documents/Calibre\ Library/ "
-alias epymindful="cd ~/Documents/Calibre\ Library/ "
-alias epyatomic="cd ~/Documents/Calibre\ Library/ "
+alias epyapics="cd ~/Documents/Calibre\ Library/APICS, Greg P. Allgair, Al Bukey, Alan L. Milliken, Peter W. Murray - CSCP 2020 Module 1 Section A (2020).epub"
+alias epymindful="cd ~/Documents/Calibre\ Library/Ven. - Henepola Gunaratana. Mindfulness In Plain English.pdf"
+alias epyatomic="cd ~/Documents/Calibre\ Library/James Clear - Atomic Habits_ Tiny Changes, Remarkable Results-Penguin Publishing Group (2018).epub"
 
 # Better Git
 alias ga='git add'
