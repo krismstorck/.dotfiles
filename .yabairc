@@ -40,55 +40,40 @@ yabai -m config right_padding                10
 yabai -m config window_gap                   20
 
 # rules
-yabai -m space 1 --label I_
-yabai -m space 2 --label Write
-yabai -m space 3 --label Browser
-yabai -m space 4 --label Tools
-yabai -m space 5 --label Comm
-yabai -m space 6 --label Media
-yabai -m space 7 --label Utilities
-yabai -m space 8 --label System
-yabai -m space 9 --label Lab
-yabai -m space 10 --label Float
-
-yabai -m config --space 9 layout float
-yabai -m config --space 10 layout float
+yabai -m space 1 --label I
+yabai -m space 2 --label II
+yabai -m space 3 --label III
+yabai -m space 4 --label IV
 
 yabai -m rule --add title='.*Install.*' manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add label="System Preferences" app='^System Preferences$' manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add label="Activity Monitor" app='^Activity Monitor$' manage=off
+yabai -m rule --add label="App Store" app="^App Store$" manage=off
 yabai -m rule --add label="Bitwarden" app="^Bitwarden$" manage=off 
 yabai -m rule --add label="Hammerspoon" app="^Hammerspoon$" manage=off
+yabai -m rule --add label="UTM" app="^UTM$" manage=off 
+yabai -m rule --add label="Windows 10" app="Windows\ 10$" manage=off
+yabai -m rule --add label="Google Chrome" app="^Google Chrome$" title='^Picture in Picture$' manage=off
 
 yabai -m rule --add label="iTerm" app="iTerm" space=1
-yabai -m signal --add event=application_launched action="yabai -m space --focus iterm &> /dev/null" app="iTerm"
 yabai -m rule --add label="Terminal" app="^Terminal$" manage=off space=1
-
-yabai -m rule --add label="Sublime" app="Sublime Text" space=2 
-yabai -m signal --add event=application_launched action="yabai -m space --focus sublime &> /dev/null" app="Sublime Text"
+yabai -m rule --add label="Sublime" app="Sublime Text" space=1
 
 yabai -m rule --add label="Code" app="Code" space=2
 
-yabai -m rule --add label="Safari" app="^Safari$" title="(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)" space=3
-yabai -m rule --add label="Google Chrome" app="^Google Chrome$" title='^Picture in Picture$' manage=off space=3
+yabai -m rule --add label="Safari" app="^Safari$" title="(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)" space=2
 
-yabai -m rule --add label="GIMP" app="^GIMP-2.10$" manage=off space=4
 
-yabai -m rule --add label="Messages" app="^Messages$" space=5
-yabai -m rule --add label="Mail" app="^Mail$" space=5
+yabai -m rule --add label="GIMP" app="^GIMP-2.10$" manage=off space=3
 
-yabai -m rule --add label="Reminders" app="^Reminders$" space=7
-yabai -m rule --add label="Notes" app="^Notes$" space=7
+yabai -m rule --add label="Messages" app="^Messages$" space=4
+yabai -m rule --add label="Mail" app="^Mail$" space=4
+yabai -m rule --add label="Reminders" app="^Reminders$" space=4
+yabai -m rule --add label="Notes" app="^Notes$" space=4
 yabai -m signal --add event=application_launched action="yabai -m space --focus notes &> /dev/null" app="^Notes$"
-yabai -m rule --add label="Calendar" app="Calendar" manage=off space=7
-yabai -m rule --add label="Terminal" app="^Terminal$" manage=off space=1
-
-yabai -m rule --add label="App Store" app="^App Store$" manage=off space=8
-yabai -m rule --add label="System Preferences" app='^System Preferences$' manage=off space=8
-yabai -m rule --add label="Activity Monitor" app='^Activity Monitor$' manage=off space=8
-
-yabai -m rule --add label="UTM" app="^UTM$" manage=off space=9
-yabai -m rule --add label="Windows 10" app="Windows\ 10$" manage=off space=9
+yabai -m rule --add label="Calendar" app="Calendar" manage=off space=4
 
 yabai -m signal --add event=space_changed \
     action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-spaces-jsx\"'"
@@ -105,5 +90,10 @@ yabai -m signal --add event=window_created \
     action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-data-jsx\"'"
 yabai -m signal --add event=space_changed \
     action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"simple-bar-data-jsx\"'"
+
+# Some more signals
+# yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+
+# yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
 echo "yabai configuration loaded.."
