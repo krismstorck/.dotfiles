@@ -28,7 +28,7 @@ I am using Hammerspoon to manage my system wide keybinds.
 |						 | `w`   | Open Bitwarden		   			|
 |						 | `x`   | Open Network settings		   	|
 
-[^1]: I have used `hidutil` to remap this 
+[^1]: Using `hidutil` to [remap this](https://hidutil-generator.netlify.app)
 
 **Window management**
 
@@ -78,7 +78,6 @@ Once in WMM the following recipes can be used:
 |						| `t` 	| https://www.trello.com 	 				 |
 
 
-
 **Quick folder access**
 
 | Leader		  		| Combo | Action	           		 |
@@ -92,45 +91,14 @@ Once in WMM the following recipes can be used:
 |	              		| `r` 	| ~/.dotfiles	   			 |
 |                		| `s` 	| ~/src				   		 |
 
-
-
-|				  | ` ` | iCloud			   |
-|				  | ` ` | iCloud/write		   |
-
-|				  |	` ` | ~/opt/homebrew	   |
-
 **Quick file access**
 
 | Leader		  		|Combo| Action	        				  |
-|-----------------------|-----|-------------------------------------|
-| `F18` (Caps Lock) + t | `h` | Open Hammerspoon config in Neovim   |
-|				  |	`t` | Open tmux config in Neovim 		  |
-|				  |	`y` | Open yabai config in Neovim		  |
-|				  |	`z` | Open zsh config in Neovim			  |
-|				  | `k` | Open keybinds.md in Sublime Text    |
-
-**Copy text and send to...**
-
-| Leader		  |Combo| Action	        				  |
-|-----------------|-----|-------------------------------------|
-| Ctrl + Opt      | `m` | iTerm							      |
-|				  |	` ` | Sublime Text 						  |
-|				  |	` ` | VS Code						      |
-|				  |	` ` | Notes								  |
-|				  | ` ` | Reminders							  |
-
-**Quality of life enhancement**
-
-[ ] Share to Photos from Safari quicker, or as a batch (useful for wallpapers)
-
-
-## iTerm
-
-## tmux
-
-## zsh
-
-
-
+|-----------------------|-----|-----------------------------------|
+| `F18` (Caps Lock) + t | `h` | Open Hammerspoon config in Neovim |
+|				  		| `t` | Open tmux config in Neovim 		  |
+|				  		| `y` | Open yabai config in Neovim		  |
+|				  		| `z` | Open zsh config in Neovim		  |
+|				  		| `k` | Open keybinds.md in Sublime Text  |
 
 
