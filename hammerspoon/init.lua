@@ -94,7 +94,30 @@ pressedF = function() f:enter() end
 releasedF = function() end
 k:bind({}, 'f', nil, pressedF, releasedF)
 
-    -- Hyper + t for file launch F14
+    -- Hyper + t for configs launch F14
+
+goToFile = function(filePath)
+  hs.execute(filePath)
+  k.triggered = true
+end
+
+t = hs.hotkey.modal.new({}, "F14")
+files = {
+  {'h', 'nvim ~/.dotfiles/hammerspoon/init.lua'}, -- Hammerspoon config
+  {'k', 'st ~/.dotfiles/keybinds.md'}, -- Keybinds
+  {'t', 'nvim ~/.dotfiles/.tmux'}, -- tmux config
+  {'y', 'nvim ~/.dotfiles/yabairc'},   -- yabai config
+  {'z', 'nvim ~/.dotfiles/zsh'} -- zsh config
+
+}
+
+for i, file in ipairs(files) do
+  t:bind({}, file[1], function() goToFile(file[2]); t:exit(); end)
+end
+
+pressedT = function() t:enter() end
+releasedT = function() end
+k:bind({}, 't', nil, pressedT, releasedT)
 
     -- Hyper + p for project launch F13
 
@@ -212,3 +235,6 @@ yabai_key({"shift", "option"}, "space", { "-m", "space", "--rotate", "90" })
 
 -- Other
 yabai_key({"control", "shift", "command"}, "space", { "-m", "window", "--toggle", "float" })
+
+
+
