@@ -38,8 +38,8 @@ alias edefaults="nvim ~/.dotfiles/scripts/defaults.sh" # System preferences
 alias keys="st ~/.dotfiles/keybinds.md" # Keybind reference
 
 # Quick folder access
-alias cdblog="cd ~/src/personal/blog && l"
-alias cdcloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/ && l"
+alias cdblog="cdl ~/src/personal/blog"
+alias cdcloud="cdl ~/Library/Mobile\ Documents/com~apple~CloudDocs/"
 alias cdcurated="cd ~/src/curated && l"
 alias cddocs="cd ~/Documents && l"
 alias cddown="cd ~/Downloads && l"
@@ -81,7 +81,7 @@ alias pause="spt pb -t"
 alias like="spt pb --like"
 
 # Books I'm reading
-alias bookshelf="cd ~/Documents/Calibre\ Library && l"
+alias bookshelf="cdl ~/Documents/Calibre\ Library"
 alias epyapics="cd ~/Documents/Calibre\ Library/APICS, Greg P. Allgair, Al Bukey, Alan L. Milliken, Peter W. Murray - CSCP 2020 Module 1 Section A (2020).epub"
 alias epymindful="cd ~/Documents/Calibre\ Library/Ven. - Henepola Gunaratana. Mindfulness In Plain English.pdf"
 alias epyatomic="cd ~/Documents/Calibre\ Library/James Clear - Atomic Habits_ Tiny Changes, Remarkable Results-Penguin Publishing Group (2018).epub"
@@ -92,11 +92,19 @@ alias gc="git commit -m"
 alias gpp="git pull"
 alias gps="git push"
 alias gs="git status"
-alias gl='git log --graph --oneline --decorate'
+alias gl="git log --graph --oneline --decorate"
 
 # System
 alias beep='echo -en "\007"' # Sound check
+alias utc="date -u"
 
 alias pbc="pbcopy"
 alias pbp="pbpaste"
+
+# Stop all da downloadin
+alias wget="wget --continue --progress=bar --timestamping"
+alias curl="curl --continue-at - --location --progress-bar --remote-name --remote-time"
+
+
+
 

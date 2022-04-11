@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+
+# make dir then cd
+function mkcd {
+    mkdir -p "$@"
+    cd "$@"
+}
+
+# cd then ll
+cdl() {
+    builtin cd "$@" && l
+}
