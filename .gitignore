@@ -1,0 +1,8 @@
+.git/
+.vscode/
+hammmerspoon/
+scripts/
+.DS_Store
+.yabairc
+Brewfile
+keybinds.md
